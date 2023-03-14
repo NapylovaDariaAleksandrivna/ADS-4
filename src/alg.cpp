@@ -1,6 +1,5 @@
 // Copyright 2021 NNTU-CS
-void Sort(int arr[], int size)
-{
+void Sort(int arr[], int size) {
     int k = 0;
     int i = 0;
     for (int j = 1; j < size; j++) {
@@ -13,8 +12,7 @@ void Sort(int arr[], int size)
         }
     }
 }
-int countPairs1(int* arr, int len, int value)
-{
+int countPairs1(int* arr, int len, int value) {
     Sort(arr, len);
     int count = 0;
     for (int i = 0; i < len; ++i) {
@@ -29,8 +27,7 @@ int countPairs1(int* arr, int len, int value)
     }
     return count / 2;
 }
-int countPairs2(int* arr, int len, int value)
-{
+int countPairs2(int* arr, int len, int value) {
     Sort(arr, len);
     int count = 0;
     for (int i = 0; i < len; ++i) {
@@ -45,8 +42,7 @@ int countPairs2(int* arr, int len, int value)
     }
     return count / 2;
 }
-int countPairs3(int* arr, int len, int value)
-{
+int countPairs3(int* arr, int len, int value) {
     Sort(arr, len);
     int count = 0;
     for (int i = 0; i < len - 1; i++)
