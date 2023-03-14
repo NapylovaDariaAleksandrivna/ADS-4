@@ -26,7 +26,7 @@ int countPairs1(int* arr, int len, int value) {
         }
         continue;
     }
-    return count / 2;
+    return count;
 }
 int countPairs2(int* arr, int len, int value) {
     Sort(arr, len);
@@ -41,7 +41,7 @@ int countPairs2(int* arr, int len, int value) {
         }
         continue;
     }
-    return count / 2;
+    return count;
 }
 int countPairs3(int* arr, int len, int value) {
     Sort(arr, len);
