@@ -13,7 +13,6 @@ void Sort(int arr[], int size)
         }
     }
 }
-
 int countPairs1(int* arr, int len, int value)
 {
     Sort(arr, len);
@@ -22,8 +21,7 @@ int countPairs1(int* arr, int len, int value)
         for (int j = len-1; j >= 0; --j) {
             if (arr[i] + arr[j] == value) {
                 count += 1;
-            }
-            else if (arr[i] + arr[j] < value) {
+            } else if (arr[i] + arr[j] < value) {
                 break;
             }
         }
@@ -39,8 +37,7 @@ int countPairs2(int* arr, int len, int value)
         for (int j = 0; j < len; ++j) {
             if (arr[i] + arr[j] == value) {
                 count += 1;
-            }
-            else if (arr[i] + arr[j] > value) {
+            } else if (arr[i] + arr[j] > value) {
                 break;
             }
         }
@@ -76,12 +73,12 @@ int countPairs3(int* arr, int len, int value)
                 }
                 break;
             }
-            if (arr[i] + arr[center] > value)
+            if (arr[i] + arr[center] > value){
                 r = center;
-            else
+            } else {
                 l = center;
+            }
         }
-
     }
     return count;
 }
